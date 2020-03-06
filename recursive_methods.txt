@@ -1,0 +1,5 @@
+# Returns all of the methods that call themselves recursively.
+#
+# Possibly gets some false positives for methods that call other methods that
+# have the same name? Not sure on if this can happen.
+cpg.call.where(c => c.method.name == c.name).method.l.distinct
