@@ -1,0 +1,1 @@
+cpg.method.l.sortBy(_.depth(_.isControlStructure)).last
